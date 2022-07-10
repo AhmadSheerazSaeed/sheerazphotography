@@ -1,0 +1,64 @@
+:root {
+  --primaryColorWhite: #fff;
+  --secondaryColorOrangeRedCrayola: #f25f5c;
+  --accentColor1NaplesYellow: #ffe066;
+  --accentColor2CgBlue: #247ba0;
+  --accentColor3DavysGray: #50514f;
+}
+
+* {
+}
+
+body,
+html {
+  width: 99vw;
+  height: 98vh;
+}
+
+.wrapperMain {
+  width: 95vw;
+  height: 95vh;
+  background-color: #fff;
+  margin: auto;
+  margin-top: 2vh;
+  margin-bottom: 1vh;
+}
+
+.sectionImageButtons {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.LogoSheeraz {
+  height: 50%;
+  width: 100%;
+}
+
+.btns {
+  height: 50%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  gap: 55px;
+}
+
+.portfolio,
+.contact {
+  height: 45px;
+  width: 120px;
+  margin-top: 45px;
+  background-color: var(--secondaryColorOrangeRedCrayola);
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 7px;
+}
+
+.portfolio:hover,
+.contact:hover {
+  font-weight: bolder;
+  font-size: 1.4rem;
+}
