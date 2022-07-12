@@ -25,6 +25,10 @@
 }
 /* menu */
 
+.toggler {
+  display: none;
+}
+
 .ulMenu {
   width: 100%;
   display: flex;
@@ -60,3 +64,27 @@
   box-shadow: 0px 0px 40px 2px var(--accentColor3AirSuperiorityBlueportfolio);
 }
 */
+
+/* media querz for 320px --------------------------------------*/
+
+@media screen and (max-width: 719px) {
+  .topsection {
+  }
+
+  .logo {
+    height: 50px;
+    width: 75px;
+    margin-right: 50%;
+  }
+
+  .logo > img {
+  }
+
+  .toggler {
+    display: block;
+  }
+
+  .ulMenu {
+    flex-direction: column;
+  }
+}
