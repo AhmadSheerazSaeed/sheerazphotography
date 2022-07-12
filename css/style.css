@@ -7,6 +7,9 @@
 }
 
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body,
@@ -15,6 +18,7 @@ html {
   height: 98vh;
 }
 
+/* main wrapper for html ------------------------------------*/
 .wrapperMain {
   width: 95vw;
   height: 95vh;
@@ -31,11 +35,16 @@ html {
   flex-direction: column;
 }
 
+/* div for img element*/
 .LogoSheeraz {
   height: 50%;
   width: 100%;
 }
 
+.imgLogo {
+}
+
+/* div for both buttons*/
 .btns {
   height: 50%;
   width: 100%;
@@ -45,6 +54,7 @@ html {
   gap: 55px;
 }
 
+/* portfolio and contact buttons*/
 .portfolio,
 .contact {
   height: 45px;
@@ -53,6 +63,8 @@ html {
   background-color: var(--secondaryColorOrangeRedCrayola);
   border: none;
   cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
   font-size: 1rem;
   border-radius: 7px;
 }
@@ -61,4 +73,36 @@ html {
 .contact:hover {
   font-weight: bolder;
   font-size: 1.4rem;
+}
+
+/* media querz for 320px --------------------------------------*/
+
+@media screen and (max-width: 320px) {
+  /* div for img element*/
+  .LogoSheeraz {
+    height: 50vh;
+    width: 100vw;
+  }
+
+  .imgLogo {
+    width: 95%;
+    height: 95%;
+  }
+
+  /* div for both buttons*/
+  .btns {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    margin-top: -80px;
+  }
+
+  /* portfolio and contact buttons*/
+
+  .portfolio:hover,
+  .contact:hover {
+    font-weight: bolder;
+    font-size: 1rem;
+  }
 }
