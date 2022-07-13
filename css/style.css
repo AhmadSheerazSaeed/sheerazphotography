@@ -45,6 +45,10 @@ html {
 }
 
 /* div for both buttons*/
+a {
+  text-decoration: none;
+  color: black;
+}
 .btns {
   height: 50%;
   width: 100%;
@@ -75,7 +79,7 @@ html {
   font-size: 1.4rem;
 }
 
-/* media querz for 320px --------------------------------------*/
+/* media query for 320px --------------------------------------*/
 
 @media screen and (max-width: 320px) {
   /* div for img element*/
