@@ -123,7 +123,18 @@ a {
   font-size: 1.3rem;
 }
 
-/* media query for 320px --------------------------------------*/
+/*------------------------------- media queries --------------------*/
+
+/* media query  1000px   -----------------------------------------------------*/
+
+@media screen and (max-width: 1000px) {
+  .middle {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+
+/* media query for 719px */
 
 @media screen and (max-width: 719px) {
   .logo {
@@ -141,15 +152,6 @@ a {
   }
 }
 
-/* media query  1000px   -----------------------------------------------------*/
-
-@media screen and (max-width: 1000px) {
-  .middle {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-  }
-}
-
 /* media query 650px ------------------------------------------------------- */
 
 @media screen and (max-width: 650px) {
@@ -159,10 +161,10 @@ a {
   }
 }
 
-/* media query 284px --------------------------------------------------------*/
+/* media query 283px --------------------------------------------------------*/
 
 @media screen and (max-width: 283px) {
-  .middle {
+  body {
     display: none;
   }
-} ;
+}
